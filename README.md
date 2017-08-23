@@ -19,3 +19,14 @@ Assumptions:
 
 Code Test Coverage:
  I have added as many unit tests as time has allowed.  The initial coverage is satisfactory.  However, more tests need to be added.
+
+Language Considerations:
+I selected Java for the following reasons:
+- An Object Oriented Language.
+- Is able to run on most Operating Systems.
+- The jar can be included as is for production deployment.
+- I am familiar with it
+
+Performance Considerations:
+I realised near the end of this project that I have coded to some extent "to impress".  I was wondering if a simple Main method may be quicker?  I do believe that this solution is very reusable and has some performance considerations such as:
+- The parser feeds the transaction directly into the aggregator otherwise another O(n) iteration would need to be completed for aggregation.
