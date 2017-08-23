@@ -1,4 +1,4 @@
-package world.jumo.accounting;
+package world.jumo.accounting.entity;
 
 import java.util.Date;
 
@@ -97,7 +97,7 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
+        return "world.jumo.accounting.entity.Transaction{" +
                 "transactionId=" + transactionId +
                 ", network='" + network + '\'' +
                 ", transactionDate=" + transactionDate +
