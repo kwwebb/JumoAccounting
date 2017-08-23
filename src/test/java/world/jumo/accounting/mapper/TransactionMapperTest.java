@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created by Kingsley Webb, (G981601) on 23/08/2017.
+ * Created by Kingsley Webb on 23/08/2017.
  */
 @RunWith(MockitoJUnitRunner.class)
 public class TransactionMapperTest {

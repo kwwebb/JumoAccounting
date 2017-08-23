@@ -16,3 +16,6 @@ Logging
 
 Assumptions:
  1. Aggregation by Network, Product, Month - Month is the actual month and does not take the year into consideration.
+
+Code Test Coverage:
+ I have added as many unit tests as time has allowed.  The initial coverage is satisfactory.  However, more tests need to be added.

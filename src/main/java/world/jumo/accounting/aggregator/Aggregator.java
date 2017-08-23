@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Kingsley Webb, (G981601) on 23/08/2017.
+ * Created by Kingsley Webb on 23/08/2017.
  */
 public abstract class Aggregator<K, T> {
 

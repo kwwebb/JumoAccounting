@@ -22,11 +22,6 @@
         <mockito.version>1.10.19</mockito.version>
 
         <mapstruct.version>1.1.0.Final</mapstruct.version>
-<!--
-        <spring.core.version>4.3.9.RELEASE</spring.core.version>
-        <spring.test.version>4.3.9.RELEASE</spring.test.version>
-        <spring.beans.version>4.3.9.RELEASE</spring.beans.version>
--->
     </properties>
 
     <build>
@@ -60,25 +55,6 @@
                     </descriptorRefs>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>${maven.exec.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>world.jumo.accounting.Main</mainClass>
-                    <!--<arguments>-->
-                        <!--<argument>foo</argument>-->
-                        <!--<argument>bar</argument>-->
-                    <!--</arguments>-->
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
@@ -90,20 +66,6 @@
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-
-        <!-- Spring -->
-<!--
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.core.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>${spring.beans.version}</version>
-        </dependency>
--->
 
         <!-- Testing -->
         <dependency>
@@ -118,14 +80,6 @@
             <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
-<!--
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.test.version}</version>
-            <scope>test</scope>
-        </dependency>
--->
 
         <!-- Mapping Framework -->
         <dependency>

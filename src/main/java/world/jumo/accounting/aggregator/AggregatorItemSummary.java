@@ -3,7 +3,7 @@ package world.jumo.accounting.aggregator;
 import java.util.List;
 
 /**
- * Created by Kingsley Webb, (G981601) on 23/08/2017.
+ * Created by Kingsley Webb on 23/08/2017.
  */
 public class AggregatorItemSummary {
 

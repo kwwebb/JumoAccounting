@@ -6,7 +6,7 @@ import world.jumo.accounting.dto.TransactionDTO;
 import world.jumo.accounting.entity.Transaction;
 
 /**
- * Created by Kingsley Webb, (G981601) on 23/08/2017.
+ * Created by Kingsley Webb on 23/08/2017.
  */
 @Mapper(uses = DateMapper.class)
 public interface TransactionMapper {

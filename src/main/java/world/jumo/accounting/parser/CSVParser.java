@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Created by Kingsley Webb, (G981601) on 21/08/2017.
+ * Created by Kingsley Webb on 21/08/2017.
  */
 public abstract class CSVParser<T> {
 
@@ -78,17 +78,24 @@ public abstract class CSVParser<T> {
             // Skip constant characters
             switch (character) {
                 case '\r': break;  // Skip carriage return
-                case '\n': break;  // Skip line feed
+                case '\n':
+                    flushBuffer(result, stringBuilder);
+                    openQuote = false;
+                    break;  // Skip line feed
                 default: stringBuilder.append(character);
             }
         }
 
         // Empty the buffer if has a last field
+        flushBuffer(result, stringBuilder);
+
+        return result;
+    }
+
+    private void flushBuffer(List<String> result, StringBuilder stringBuilder) {
         if (stringBuilder.length() > 0) {
             result.add(stringBuilder.toString());
         }
-
-        return result;
     }
 
     public List<T> parseCsvFile(String csvFile, boolean skipHeader) throws Exception {
